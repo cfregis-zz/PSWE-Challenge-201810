@@ -1,6 +1,8 @@
 # PSWE-Challenge-201810
 
-A Java Console Demo App. This is a demo app about Company Employees Balancing.
+A Java Console Demo App. 
+
+This is a demo app about Company Employees Balancing.
 
 The main goals of this App are:
 a) Implementation of the Requirements
