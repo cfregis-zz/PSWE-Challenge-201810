@@ -1,0 +1,163 @@
+load "team.txt" "employees.txt"
+allocate
+promote 2
+balance
+promote 4
+balance
+------------------------------------------------------------------------------------
+Employee Name,PLevel,Birth Year,Admission Year,Last Progression Year - data per year
+-------- 2018 - M = 19 | R = 4  | Q = 1| % = 1 | arr[] = {4,4,3,3,2,2,1};
+Lucas,4
+Luiz,4
+Diego,3
+Felipe,3
+Daniel,2
+Jose Carlos,2
+Luciano,1
+-------- 2019 - M = 21 | R = 6  | Q = 2| % = 0 | arr[] = {5,4,3,3,2,2,2};
+Luiz,5
+Lucas,4
+Diego,3
+Felipe,3
+Daniel,2
+Jose Carlos,2
+Luciano,2
+-------- 2020 -M = 25 | R = 10  | Q = 3| % = 1 | arr[] = {5,4,4,3,3,3,3};
+Luiz,5
+Lucas,4
+Diego,4
+Felipe,3
+Daniel,3
+Jose Carlos,3
+Luciano,3
+-------- Clients required total : 15
+C1 3 | 4 ou 5 | 5 | 6* ou 7 
+C2 5 | 6 ou 7 | 7 | 8* ou 9 
+C3 7 | 8 ou 9 | 9 | 10 ou 11*
+-----------------------------------------------2018
+Client 1 - Min. Maturity 3 - Current Maturity 7
+Felipe - 3
+Daniel - 2
+José Carlos - 2
+Client 2 - Min. Maturity 5- Current Maturity 5
+Luiz - 4
+Luciano - 1
+Client 3 - Min. Maturity 7 - Current Maturity 7
+Lucas - 4
+Diego - 3
+-----------------------------------------------2019
+Client 1 - Min. Maturity 3 - Current Maturity 5
+Felipe - 3
+Daniel - 2
+Client 2 - Min. Maturity 5- Current Maturity 7
+José Carlos - 2
+Diego - 3
+Luciano - 2
+Client 3 - Min. Maturity 7 - Current Maturity 9
+Lucas - 4
+Luiz - 5
+-----------------------------------------------2020
+Client 1 - Min. Maturity 3 - Current Maturity 6
+Felipe - 3
+Daniel - 3
+Client 2 - Min. Maturity 5- Current Maturity 8
+Lucas - 4
+Diego - 4
+Client 3 - Min. Maturity 7 - Current Maturity 11
+Luiz - 5
+Luciano - 3
+Jose Carlos - 3
+-----------------------------------------------
+Employee Name,PLevel,Birth Year,Admission Year,Last Progression Year
+--------
+Lucas,4
+Luiz,4
+Diego,3
+Felipe,3
+Daniel,2
+Jose Carlos,2
+Luciano,1
+--------
+Luiz,5
+Lucas,4
+Diego,3
+Felipe,3
+Daniel,2
+Jose Carlos,2
+Luciano,2
+--------
+Luiz,5
+Lucas,4
+Diego,4
+Felipe,3
+Daniel,3
+Jose Carlos,3
+Luciano,3
+--------
+C1 3
+C2 5
+C3 7
+
+--original log:
+load “team.txt” “employees.txt”
+loaded
+
+allocate
+
+Client 1 - Min. Maturity 3 - Current Maturity 7
+Felipe - 3
+Daniel - 2
+José Carlos - 2
+
+Client 2 - Min. Maturity 5- Current Maturity 5
+Luiz - 4
+Luciano - 1
+
+Client 3 - Min. Maturity 7 - Current Maturity 7
+Lucas - 4
+Diego - 3
+
+promote 2
+
+Luciano - From: 1 - To: 2
+Luiz - From: 4 - To: 5
+
+balance
+
+Client 1 - Min. Maturity 3 - Current Maturity 5
+Felipe - 3
+Daniel - 2
+
+Client 2 - Min. Maturity 5- Current Maturity 7
+José Carlos - 2
+Diego - 3
+Luciano - 2
+
+Client 3 - Min. Maturity 7 - Current Maturity 9
+Lucas - 4
+Luiz - 5
+
+promote 4
+
+Luciano - From: 2 - To: 3
+Daniel - From: 2 - To: 3
+Jose Carlos - From: 2 - To: 3
+Diego - From: 3 - To: 4
+
+balance
+
+Client 1 - Min. Maturity 3 - Current Maturity 6
+Felipe - 3
+Daniel - 3
+
+Client 2 - Min. Maturity 5- Current Maturity 8
+Lucas - 4
+Diego - 4
+
+Client 3 - Min. Maturity 7 - Current Maturity 11
+Luiz - 5
+Luciano - 3
+Jose Carlos - 3
+
+---------------
+load "C:\Users\Carlos Filipe\Documents\CARLOS\challenge\PSWE-Challenge-201810\src\employeesbalancing\team.txt" "C:\Users\Carlos Filipe\Documents\CARLOS\challenge\PSWE-Challenge-201810\src\employeesbalancing\employees.txt"
