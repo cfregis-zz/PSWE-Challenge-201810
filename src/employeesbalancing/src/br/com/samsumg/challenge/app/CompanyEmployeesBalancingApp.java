@@ -19,9 +19,9 @@ public class CompanyEmployeesBalancingApp {
 		//give instructions to the user
 		System.out.println(">> Welcome!");
 		System.out.println("These are the commands examples to use this app: ");
-		System.out.println("load​ \"team.txt\" \"employees.txt\" // load data from files to the system ");
+		System.out.println("load  \"team.txt\" \"employees.txt\" // load data from files to the system ");
 		System.out.println("allocate // allocate employees between teams accordling the Maturity specified");
-		System.out.println("promote ​2 // promote 2 employees, following promotion criterias");
+		System.out.println("promote 2// promote 2 employees, following promotion criterias");
 		System.out.println("balance // redistribute employees between the teams, accordling the Maturity specified");
 		System.out.println("Type quit, to exit the program.");
 		System.out.print(">> ");

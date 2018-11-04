@@ -123,9 +123,6 @@ public class CompanyEmployeesBalancingBusiness {
 		this.excedentPointsAverage =  this.excedentPoints/this.teams.size();
 		this.excedentPointsRemainder = this.excedentPoints%this.teams.size();
 		
-		
-		System.out.println("Delta Ex. Points:" + this.excedentPointsAverage);
-		
 		for (Team team : this.teams) {
 			team.setEmployees(new ArrayList<>());
 			team.setTeamCurrentMaturity(0);
@@ -226,7 +223,7 @@ public class CompanyEmployeesBalancingBusiness {
 		}			
 	}
 
-	public void promote(int promotedEmployeesNumber) {
+	public List<Employee> promote(int promotedEmployeesNumber) {
 		List<Employee> employeesEligible = getEmployeesEligibleForPromotion();
 		List<Employee> employeesPromoted = getEmployeesPromoted(employeesEligible, promotedEmployeesNumber);
 		promoteEmployees(employeesPromoted);
@@ -235,6 +232,7 @@ public class CompanyEmployeesBalancingBusiness {
 				 .mapToInt(o -> o.getPLevel())
 				 .sum();
 		this.year = this.year + 1; 
+		return employeesPromoted;
 	}
 
 	private void promoteEmployees(List<Employee> employeesPromoted) {
@@ -349,4 +347,37 @@ public class CompanyEmployeesBalancingBusiness {
 
 	}
 
+	public int getYear() {
+		return year;
+	}
+
+	public int getMinRequiredTeamsTotalPoints() {
+		return minRequiredTeamsTotalPoints;
+	}
+
+	public int getCurrentEmployeesTotalPoints() {
+		return currentEmployeesTotalPoints;
+	}
+
+	public int getExcedentPoints() {
+		return excedentPoints;
+	}
+
+	public int getExcedentPointsAverage() {
+		return excedentPointsAverage;
+	}
+
+	public int getExcedentPointsRemainder() {
+		return excedentPointsRemainder;
+	}
+
+	public List<Team> getTeams() {
+		return teams;
+	}
+
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+
+	
 }
