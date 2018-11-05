@@ -6,6 +6,10 @@ Import project on eclipse,
 provided on the problem description. 
 
 2. Run the class "CompanyEmployeesBalancingApp.java", to run the main app flow, and use the console prompt to interact with the app.
+
+3. Export the project on eclipse as a runnable jar, from the execution of the class CompanyEmployeesBalancingApp. 
+I save the file on the dist folder. But the email block the .jar file on the upload. 
+So if want to run as a command line app outside eclipse, export as runnable jar for Java 8.
 ------------------------------------------------------------------------------------------------------------------------------------
 Run without Eclipse:
 
